@@ -1,0 +1,75 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e4c8c8;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7f3f3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-section input {
+    width: 70%;
+    padding: 10px;
+}
+
+.input-section button {
+    padding: 10px 20px;
+}
+
+.toggle-section button {
+    padding: 10px;
+    margin: 5px;
+}
+
+#task-table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress-fill {
+    height: 100%;
+    background-color: #59c95c;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: #d5acac;
+    color: #302323;
+}
+
+.dark-mode .container {
+    background-color: #444;
+}
+
+/* Dark mode progress bar */
+.dark-mode #progress-bar {
+    background-color: #666;
+}
+
+.dark-mode #progress-fill {
+    background-color: #80d396;
+}
